@@ -1,5 +1,5 @@
 import React from "react";
-import LogicConnector from "../../components/logicConnector";
+import LogicConnectorRow from "../../components/logicConnectorRow";
 import "./logic.css";
 
 const wrapperStyle: React.CSSProperties = {
@@ -28,7 +28,7 @@ const andTable = (
     </thead>
     <tbody>
       {cases.map((v, i) => (
-        <LogicConnector key={i} p={v[0]} q={v[1]} conn={_and} />
+        <LogicConnectorRow key={i} p={v[0]} q={v[1]} conn={_and} />
       ))}
     </tbody>
   </table>
@@ -45,7 +45,7 @@ const orTable = (
     </thead>
     <tbody>
       {cases.map((v, i) => (
-        <LogicConnector key={i} p={v[0]} q={v[1]} conn={_or} />
+        <LogicConnectorRow key={i} p={v[0]} q={v[1]} conn={_or} />
       ))}
     </tbody>
   </table>
