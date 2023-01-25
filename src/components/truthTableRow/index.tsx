@@ -6,7 +6,7 @@ interface LogicParams {
   conn: (p: boolean, q: boolean) => string;
 }
 
-const LogicConnectorRow = ({ p, q, conn }: LogicParams) => {
+const TruthTableRow = ({ p, q, conn }: LogicParams) => {
   return (
     <tr>
       <td>{p.toString()}</td>
@@ -16,4 +16,4 @@ const LogicConnectorRow = ({ p, q, conn }: LogicParams) => {
   );
 };
 
-export default LogicConnectorRow;
+export default TruthTableRow;
